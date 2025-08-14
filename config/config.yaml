@@ -1,0 +1,59 @@
+# Betika Virtual Games Prediction Model Configuration
+
+# Data Collection Settings
+data_collection:
+  base_url: "https://www.betika.com"
+  virtual_games:
+    - "virtual-football"
+    - "virtual-basketball" 
+    - "virtual-tennis"
+    - "virtual-horse-racing"
+  collection_interval: 300  # seconds
+  max_retries: 3
+  timeout: 30
+
+# Model Settings
+models:
+  algorithms:
+    - "random_forest"
+    - "xgboost"
+    - "neural_network"
+    - "svm"
+  training:
+    test_size: 0.2
+    validation_size: 0.1
+    cross_validation_folds: 5
+  features:
+    - "team_stats"
+    - "historical_performance"
+    - "time_patterns"
+    - "odds_movements"
+
+# Prediction Settings
+prediction:
+  confidence_threshold: 0.7
+  max_predictions_per_day: 50
+  min_data_points: 100
+
+# Database Settings
+database:
+  type: "sqlite"
+  path: "data/betika_games.db"
+  backup_interval: 86400  # 24 hours
+
+# API Settings
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  cors_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/betika_model.log"
+  max_file_size: "10MB"
+  backup_count: 5
