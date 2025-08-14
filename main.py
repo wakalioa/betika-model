@@ -116,7 +116,7 @@ def collect(ctx, continuous, once):
         except Exception as e:
             click.echo(f"❌ Data collection failed: {e}", err=True)
         finally:
-            collector.close()
+            await collector.close()
     
     # Default to once if no option specified
     if not continuous and not once:

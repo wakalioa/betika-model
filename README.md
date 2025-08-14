@@ -27,9 +27,14 @@ cd betika-model
 pip install -r requirements.txt
 ```
 
-3. **Initialize the system:**
+3. **Setup Playwright (for web scraping):**
 ```bash
-python main.py init
+python3 setup_playwright.py
+```
+
+4. **Initialize the system:**
+```bash
+python3 main.py init
 ```
 
 ### Basic Usage
@@ -37,25 +42,25 @@ python main.py init
 1. **Collect data:**
 ```bash
 # One-time collection
-python main.py collect --once
+python3 main.py collect --once
 
 # Continuous collection
-python main.py collect --continuous
+python3 main.py collect --continuous
 ```
 
 2. **Train models:**
 ```bash
-python main.py train virtual_football
+python3 main.py train virtual_football
 ```
 
 3. **Generate predictions:**
 ```bash
-python main.py predict virtual_football --limit 5
+python3 main.py predict virtual_football --limit 5
 ```
 
 4. **Start API server:**
 ```bash
-python main.py serve
+python3 main.py serve
 ```
 
 ## System Architecture
@@ -267,7 +272,7 @@ The system tracks model performance through:
 - **Machine Learning**: scikit-learn, xgboost, lightgbm, tensorflow
 - **Data Processing**: pandas, numpy
 - **Web Framework**: FastAPI, uvicorn
-- **Data Collection**: requests, beautifulsoup4, selenium
+- **Data Collection**: requests, beautifulsoup4, playwright
 - **Database**: SQLite (via sqlite3)
 - **Configuration**: PyYAML, python-dotenv
 
@@ -293,9 +298,9 @@ Override configuration with environment variables:
 - Ensure `config/config.yaml` exists
 - Use `--config` option to specify custom path
 
-**"ChromeDriver not found"**
-- Install ChromeDriver for Selenium
-- Ensure it's in PATH or use headless mode
+**"Playwright browser not found"**
+- Install Playwright browsers: `python -m playwright install chromium`
+- Ensure sufficient disk space for browser downloads
 
 **API server fails to start**
 - Check if port is already in use
