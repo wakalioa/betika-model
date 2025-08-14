@@ -47,3 +47,14 @@ Stacktrace:
 2025-08-14 08:03:47,877 - src.api.main - INFO - Shutting down API
 2025-08-14 08:05:07,900 - root - INFO - Logging configured successfully
 2025-08-14 08:05:07,900 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 08:23:11,811 - root - INFO - Logging configured successfully
+2025-08-14 08:23:11,812 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 08:23:25,504 - root - INFO - Logging configured successfully
+2025-08-14 08:23:25,505 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 08:23:33,473 - root - INFO - Logging configured successfully
+2025-08-14 08:23:33,644 - root - INFO - Logging configured successfully
+2025-08-14 08:23:33,668 - src.api.main - INFO - Starting Betika Virtual Games Prediction API
+2025-08-14 08:23:33,669 - src.api.main - INFO - API started successfully
+2025-08-14 08:23:42,789 - src.api.main - INFO - Shutting down API
+2025-08-14 08:23:50,573 - root - INFO - Logging configured successfully
+2025-08-14 08:23:50,574 - src.utils.database - INFO - Database initialized successfully
