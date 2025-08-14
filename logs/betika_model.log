@@ -1,0 +1,36 @@
+2025-08-14 07:44:57,697 - root - INFO - Logging configured successfully
+2025-08-14 07:44:57,717 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 07:45:03,959 - root - INFO - Logging configured successfully
+2025-08-14 07:45:03,960 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 07:45:11,204 - root - INFO - Logging configured successfully
+2025-08-14 07:45:11,204 - src.utils.database - INFO - Database initialized successfully
+2025-08-14 07:45:26,387 - src.data.collector - ERROR - Error collecting virtual football data: Message: 
+Stacktrace:
+#0 0x56160da0101a <unknown>
+#1 0x56160d4a0a70 <unknown>
+#2 0x56160d4f2907 <unknown>
+#3 0x56160d4f2b01 <unknown>
+#4 0x56160d540d54 <unknown>
+#5 0x56160d51840d <unknown>
+#6 0x56160d53e14f <unknown>
+#7 0x56160d5181b3 <unknown>
+#8 0x56160d4e459b <unknown>
+#9 0x56160d4e5971 <unknown>
+#10 0x56160d9c61eb <unknown>
+#11 0x56160d9c9f39 <unknown>
+#12 0x56160d9ad2c9 <unknown>
+#13 0x56160d9caae8 <unknown>
+#14 0x56160d991baf <unknown>
+#15 0x56160d9ee0a8 <unknown>
+#16 0x56160d9ee286 <unknown>
+#17 0x56160d9ffff6 <unknown>
+#18 0x7f948293def1 <unknown>
+#19 0x7f94829cf45c <unknown>
+
+2025-08-14 07:45:43,059 - root - INFO - Logging configured successfully
+2025-08-14 07:45:43,213 - root - INFO - Logging configured successfully
+2025-08-14 07:45:43,236 - src.api.main - INFO - Starting Betika Virtual Games Prediction API
+2025-08-14 07:45:43,236 - src.api.main - INFO - API started successfully
+2025-08-14 07:58:13,868 - src.api.main - INFO - Shutting down API
+2025-08-14 07:58:30,212 - root - INFO - Logging configured successfully
+2025-08-14 07:58:30,213 - src.utils.database - INFO - Database initialized successfully
